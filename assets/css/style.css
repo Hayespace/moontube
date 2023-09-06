@@ -98,10 +98,10 @@ article {
       width: 20vh;
       font-size: 1.2rem;
       transition: opacity 1.5s ease-in;
-
       color: rgb(217, 166, 72);
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      cursor: pointer;
   }
 
   .btn {
