@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&family=Roboto+Mono:ital,wght@0,400;1,200;1,700&display=swap');
+
+/* Global */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom right, #000000, rgb(104, 34, 109));
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    overflow: hidden;
+    
+  }
+
+  /* Logo */
+  
+  .logo {
+      margin: 10px 10px;
+  }
+  
+  .logo h2 {
+      color: rgb(217, 166, 72);
+      margin: auto;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  /* Panels */
+  
+  .container {
+      margin: 2%;
+      display: flex;
+      width: 70vw;
+      justify-content: center;
+      padding: 2%;
+      
+  }
+  
+  .panel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      width: 10%;
+      padding: 10px;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+      position: relative;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: thanks #fff;      
+  }
+  
+  .panel .corner-logo {
+      opacity: 0;
+  } 
+
+  .panel.active .corner-logo {  
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 1.5s ease-in;
+} 
+
+  .panel button {
+    opacity: 0;
+}
+
+  a {
+    color: rgb(217, 166, 72);
+    cursor: grab;
+  }
+
+article {
+    display: none;
+    
+}
+  
+  .panel.active {
+      width: 80%;
+      margin: auto;
+      transition: width 0.9s ease-in-out;
+  }
+  
+  .panel.active button {
+    background-color: rgba(176, 39, 114, 0.7);
+      border-radius: 20px;
+      opacity: 1;
+      height: 10vh;
+      width: 20vh;
+      font-size: 1.2rem;
+      transition: opacity 1.5s ease-in;
+
+      color: rgb(217, 166, 72);
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+  
+
+  .panel.active article {
+    display: block;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.65);
+    font-size: large;
+    border: none;
+    background-color: rgba(176, 39, 114, 0.7);
+    margin: auto;
+    margin-top: 30%;
+    width: 70%;
+    padding: 10px;
+    transition: opacity 0.7s ease-in;
+  }
+
+
+
+  
+
+  /* responsive settings */  
+
+  @media(max-width: 1930px)  {
+      .buttons {
+          max-height: 100%;
+          overflow-x: scroll;
+      }
+
+      .container {
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        justify-content: center;
+        height: auto;
+
+    }
+  }
+
+  @media(max-width: 1930px)  {
+    .buttons {
+        max-height: 100%;
+        overflow-x: scroll;
+    }
+
+    .container {
+      width: auto;
+      height: auto;
+      margin-right: auto;
+      justify-content: center;
+      height: auto;
+  }
+
+}
+  
+  @media(max-width: 1288px) {
+      .panel.active button {
+         border-radius: 35px; 
+         height: 17vh;
+         width: 17vh;
+         margin: 10px;
+         justify-content: center;
+         align-items: center;
+         font-size: small;
+      }
+  }
+  
+  
+  @media(max-width: 923px) {
+      .container {
+          margin: 10px 20px;
+      }
+      .panel.active button {
+          height: 13vh;
+          width: 13vh;
+          margin: 5px;
+      }
+
+        .piano-case {
+        transform: rotate(-90deg);
+        position: absolute;
+        padding: 10px 10px;
+        margin-right: 15vh;
+    }
+  
+      .logo {
+          display: none;
+      }
+
+      .panel-none {
+        display: none;
+    }
+  }
+  
+  @media(max-width: 569px) {
+
+    .container {
+        width: auto;
+        display: flex;
+        align-content: center;
+        margin: 20%;
+    }
+
+      .panel.active button {
+          font-size: x-small;
+          height: 10vh;
+          width: 10vh;
+          margin: 5px;
+      }
+      
+      h3 {
+        display: none;
+      }
+      
+  }
