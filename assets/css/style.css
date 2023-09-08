@@ -158,14 +158,19 @@ article {
 }
   
 @media(max-width: 1024px) {
+
+  .container {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
   .panel {
     height: 150px;
     width: 150px;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    
-
   }
 
   .panel-none {
