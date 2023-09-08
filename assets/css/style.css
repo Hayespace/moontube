@@ -24,9 +24,9 @@
   
   
   .logo {
-      justify-content: center;
+      margin-top: 40%;
       color: rgb(217, 166, 72);
-      margin: auto;
+      
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
