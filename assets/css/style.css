@@ -21,11 +21,10 @@
 
   /* Logo */
   
-  .logo {
-      margin: 10px 10px;
-  }
   
-  .logo h2 {
+  
+  .logo {
+      justify-content: center;
       color: rgb(217, 166, 72);
       margin: auto;
       text-align: center;
@@ -163,6 +162,7 @@ article {
     height: 150px;
     width: 150px;
     flex-wrap: wrap;
+    margin: auto;
     justify-content: center;
     
 
