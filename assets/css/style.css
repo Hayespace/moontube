@@ -8,6 +8,8 @@
   
   body {
     background-image: linear-gradient(to bottom right, #000000, rgb(104, 34, 109));
+    background-position: center;
+    background-size: auto;
     font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
@@ -145,94 +147,28 @@ article {
   /* responsive settings */  
 
   @media(max-width: 1930px)  {
-      .buttons {
-          max-height: 100%;
-          overflow-x: scroll;
-      }
-
+    
       .container {
         width: auto;
         height: auto;
         margin-right: auto;
         justify-content: center;
-        height: auto;
 
     }
-  }
-
-  @media(max-width: 1930px)  {
-    .buttons {
-        max-height: 100%;
-        overflow-x: scroll;
-    }
-
-    .container {
-      width: auto;
-      height: auto;
-      margin-right: auto;
-      justify-content: center;
-      height: auto;
-  }
 
 }
   
-  @media(max-width: 1288px) {
-      .panel.active button {
-         border-radius: 35px; 
-         height: 17vh;
-         width: 17vh;
-         margin: 10px;
-         justify-content: center;
-         align-items: center;
-         font-size: small;
-      }
+@media(max-width: 1024px) {
+  .panel {
+    height: 150px;
+    width: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
   }
-  
-  
-  @media(max-width: 923px) {
-      .container {
-          margin: 10px 20px;
-      }
-      .panel.active button {
-          height: 13vh;
-          width: 13vh;
-          margin: 5px;
-      }
 
-        .piano-case {
-        transform: rotate(-90deg);
-        position: absolute;
-        padding: 10px 10px;
-        margin-right: 15vh;
-    }
-  
-      .logo {
-          display: none;
-      }
-
-      .panel-none {
-        display: none;
-    }
+  .panel-none {
+    display: none;
   }
-  
-  @media(max-width: 569px) {
-
-    .container {
-        width: auto;
-        display: flex;
-        align-content: center;
-        margin: 20%;
-    }
-
-      .panel.active button {
-          font-size: x-small;
-          height: 10vh;
-          width: 10vh;
-          margin: 5px;
-      }
-      
-      h3 {
-        display: none;
-      }
-      
-  }
+}
