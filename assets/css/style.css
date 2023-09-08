@@ -20,13 +20,14 @@
   }
 
   /* Logo */
-  
-  
+  .logo-shad {
+  box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.65);
+  border-radius: 50%;
+  }
   
   .logo {
       margin-top: 40%;
       color: rgb(217, 166, 72);
-      
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
