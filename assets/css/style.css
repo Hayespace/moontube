@@ -187,7 +187,7 @@
 
   .container {
     display: inline-block;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: auto;
     align-items: center;
     justify-content: center;
@@ -213,15 +213,13 @@
   .panel.active article {
     justify-content: center;
     display: inline-flexbox;
-   
     font-size: large;
     z-index: 1;
     position: relative;
-    margin-top: 20%;
+    margin-top: 40%;
     margin-left: 5%;
     
   }
-
 
   .corner-logo{
     display: none;
