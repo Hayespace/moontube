@@ -164,7 +164,7 @@
 
   /* responsive settings */
 
-  @media(max-height: 1080px)  {
+  @media(max-height: 900px)  {
     
       .container {
         width: auto;
